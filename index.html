@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainLayout">
+        <div class="left">
+            <div></div>
+            <div id="leftBanner"> 
+                <img src="img/odin-lined.png" class="logo"><h1 class="odin">Odin:</h1> 
+            </div><div></div>
+            <div id="credits" class="" style="text-align: center;">
+                Photo by <a href="https://unsplash.com/@lanirudhreddy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ANIRUDH</a> on <a href="https://unsplash.com/photos/3esjG-nlgyk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+    
+        <div class="right">
+            <div id="odinQuote" class="odin" style="text-align:center;">
+                <h2>Dare you believe yourself worthy of the name of "Thor"?</h2>
+                
+                <h2>Take the hammer!</h2>
+            </div>
+            <div class="center">
+                <form id="theOnlyForm" action="https://httpbin.org/post" method="post" class="" >
+                    <div id="text-div" class="">
+                        <div class="input-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" 
+                            placeholder="First" required>
+                        </div>    
+                        <div class="input-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" 
+                            placeholder="Last">
+                        </div>    
+                        <div class="input-group">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" id="user_email" name="email" 
+                            placeholder="your@email.com" required>
+                        </div>
+                        <div class="input-group ">
+                            <label for="phone">PHONE</label>
+                            <input type="tel" min="10" max="10" placeholder="1234567890" pattern="1?-?\(?[0-9]{3}\)?-?[0-9]{3}-?[0-9]{4}">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password"
+                            placeholder="password" min="8" max="16" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm-password"
+                            placeholder="confirm password" min="8" max="16" required>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="terms" name="option1" value="accept" required>
+                        <label for="terms">Accept <a>terms</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="email" name="option2" value="get_email" checked>
+                        <label for="email">Tons of email?</label>
+                    </div>
+                    <button id="grasp_btn"> Grasp Mjolnir! </button>
+                    <div>
+                        Already have an account?
+                    </div><div style="padding:1vh;">
+                        <a href="https://www.theodinproject.com/sign_in" id="log-in"> Travel the Rainbow Road </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

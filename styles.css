@@ -1,0 +1,207 @@
+@font-face {
+    font-family: odin-speak;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root{
+    --background-color: dimgrey;
+    --fg-color: rgba(239, 232, 241, 0.915);
+}
+
+*{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    border:none;
+    
+}
+body {
+	line-height: 1;
+    color: var(--fg-color);
+    background-color: var(--background-color);
+}
+
+.odin {
+    font-family: odin-speak, sans-serif;
+    color:cornsilk;
+}
+
+#leftBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0,0,0,.5);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+h1{
+    font-size: 10vh;
+}
+h2{
+    font-size: 5vh;
+}
+
+.logo{
+    height: 10vh;
+}
+
+#mainLayout{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height:100vh;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#odinQuote{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    height:100%;
+    width:30%;
+    background-image: url(img/mjolnir.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right{
+    width:70%;
+    background-color: var(--background-color);
+    box-shadow: inset 0 0 10vh rgba(0,0,0,1);
+}
+
+a {
+    text-decoration: none;
+    color: #ddddff;
+  }
+  
+a, a:hover, a:focus {
+      text-decoration: none;
+      color: #eee;
+      text-shadow: none;
+      -webkit-transition: 300ms linear 0s;
+      -moz-transition: 300ms linear 0s;
+      -o-transition: 300ms linear 0s;
+      transition: 300ms linear 0s;
+      outline: 0 none;
+}
+  
+a:hover, a:focus {
+      text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+      color: black;
+}
+
+form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-div{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 2vh;
+    row-gap: 2vh;
+    justify-content: center;
+}
+
+#text-div > div {
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+}
+
+input:not(input[type="checkbox"]){
+    border-radius: 1vh;
+    border-style: solid 1px;
+    background-color: rgba(62, 57, 51, 0.5);
+    color: white;
+    font-family: odin-speak, sans-serif;
+    font-size: large;
+    text-align: center;
+    padding:1vh;
+    margin:1vh;
+}
+input[type="checkbox"]{
+    margin:1vh;
+}
+
+button{
+    font-family: odin-speak;
+    font-size: 3vh;
+    margin: 3vh;
+    padding:1vh;
+    border-radius: .5vh;
+    background-color: #9bdb64;
+}
+.input-group{
+
+}
+
+#credits, #credits > a {
+    color: black;
+}
+
+.wrong{
+    border:1px solid red;
+    border-radius: 1vh;
+}
+/*
+#log-in{
+    background: linear-gradient(to right, #f48fb1,#2196f3, #26c6da, #6ed273,#f9a825)
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+#log-in {
+    font-family: odin-speak, sans-serif;
+    font-size: large;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media only screen and ( max-aspect-ratio: 1/1 ) {
+    #mainLayout{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .left{
+        width:100%;
+        height:100vh;
+        
+    }
+    .right{
+        width:100%;
+    }
+}
